@@ -8,6 +8,7 @@ import gymnasium as gym
 from stable_baselines3 import PPO
 from stable_baselines3.common.callbacks import CheckpointCallback
 from stable_baselines3.common.vec_env import DummyVecEnv
+from stable_baselines3.common.monitor import Monitor
 
 # ==========================================
 # 1. 설정
@@ -40,12 +41,18 @@ os.makedirs(MODEL_DIR, exist_ok=True)
 
 print("🏎️ CarRacing 환경 초기화 중...")
 
-# CarRacing-v3 환경 생성
+# CarRacing-v3 환경 생성 함수 (Monitor 래퍼 포함)
 # continuous=True: 부드러운 핸들 조작 (False면 이산적)
-env = gym.make("CarRacing-v3", continuous=True)
-env = DummyVecEnv([lambda: env])  # 벡터 환경으로 래핑
+def make_env():
+    env = gym.make("CarRacing-v3", continuous=True)
+    # Monitor 래퍼: 에피소드 통계를 자동으로 기록 (ep_rew_mean, ep_len_mean)
+    env = Monitor(env)
+    return env
+
+env = DummyVecEnv([make_env])  # 벡터 환경으로 래핑
 
 print("✅ 환경 초기화 완료!")
+print("💡 Monitor 래퍼가 추가되어 ep_rew_mean이 출력됩니다!")
 
 # ==========================================
 # 3. 모델 생성
