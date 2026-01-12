@@ -1,0 +1,6 @@
+gymnasium[box2d]>=0.29.0
+stable-baselines3[extra]>=2.0.0
+shimmy>=1.2.0
+moviepy>=1.0.3
+swig>=4.0.0
+pygame>=2.1.0
