@@ -13,7 +13,7 @@ OpenAI Gym의 CarRacing 환경에서 PPO 알고리즘을 사용하여 자율주�
 ## 🚀 빠른 시작 (Google Colab)
 
 ### 1. 학습하기
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/car_racing_rl/blob/main/colab_train.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kaz264/car_racing_rl/blob/master/colab_train.ipynb)
 
 `colab_train.ipynb`를 Colab에서 열어 실행하세요.
 - 학습 시간: 약 30분~1시간 (GPU 사용 시)
@@ -21,7 +21,7 @@ OpenAI Gym의 CarRacing 환경에서 PPO 알고리즘을 사용하여 자율주�
 - 자동으로 모델 저장
 
 ### 2. 테스트하기
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/car_racing_rl/blob/main/colab_test.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kaz264/car_racing_rl/blob/master/colab_test.ipynb)
 
 `colab_test.ipynb`를 Colab에서 열어 실행하세요.
 - 학습된 AI의 주행 영상 확인
@@ -33,7 +33,7 @@ OpenAI Gym의 CarRacing 환경에서 PPO 알고리즘을 사용하여 자율주�
 ### 설치
 ```bash
 # 저장소 클론
-git clone https://github.com/YOUR_USERNAME/car_racing_rl.git
+git clone https://github.com/kaz264/car_racing_rl.git
 cd car_racing_rl
 
 # 의존성 설치
