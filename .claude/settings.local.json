@@ -3,7 +3,14 @@
     "allow": [
       "Bash(python:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh:*)",
+      "Bash(where:*)",
+      "Bash(powershell -c:*)",
+      "Bash(cmd /c \"gh --version 2>nul\")",
+      "Bash(export PATH=$PATH:/c/Program Files/GitHub CLI:/c/Program Files \\\\\\(x86\\\\\\)/GitHub CLI)",
+      "Bash(git push)"
     ]
   }
 }
